@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Paradise Computer</title>
-    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-  <header>
-      <nav>
-          <div class="logo-name">
-              <div class="logo">
-                  <img src="" alt="Logo">
-              </div>
-              <div class="name">
-                  Name
-              </div>
-          </div>
-          <div class="menu">
-              <div class="menu-items">
-                  <a href="">About</a>
-                  <a href="">Products</a>
-                  <a href="">Recognition</a>
-                  <a href="">Contact</a>
-              </div>
-          </div>
-          <div class="mobile-menu">
-              <div class="ham-icon">
-                  <svg></svg>
-              </div>
-              <div class="menu-items">
-                  <a href="">About</a>
-                  <a href="">Products</a>
-                  <a href="">Recognition</a>
-                  <a href="">Contact</a>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Paradise Computer</title>
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="m-0 font-sans bg-gray-700 text-gray-300">
+
+	<header class="flex flex-row w-full justify-center">
+        <div class="w-full max-w-5xl">
+            <nav class="m-3 p-4 py-1 rounded-full bg-gray-900 blur-md shadow-2xl">
+			<div class="mx-auto px-4">
+				<div class="flex justify-between md:justify-center">
+					<div class="flex flex-space space-x-7 w-full">
+						<a href="" class="flex items-center py-2 px-2">
+							<img class="h-12 w-12 mr-2 text-blue-400" src="/static/images/PC.svg" alt="Logo">
+                            <h1 class="hidden lg:inline-flex text-2xl font-semibold text-blue">Computer&nbsp;<span class="text-red">Paradise</span></h1>
+                        </a>
+
+                        <div class="hidden md:flex w-full justify-end items-center space-x-1">
+                            <a href="" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Home</a>
+                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Products</a>
+                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Recognition</a>
+                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+                        </div>
+                        <div class="w-full flex justify-end items-center md:hidden">
+                            <div class="">
+                                <button class="outline-none mobile-menu-button">
+                                    <svg
+                                        class="w-8 h-8 text-blue"
+                                        x-show="!showMenu"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                    <path d="M4 6h16M4 12h14M4 18h16"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="absolute top-16 bg-gray-700 p-6 shadow-2xl rounded-lg hidden mobile-menu">
+                                <ul>
+                                    <li class="active"><a href="index.html" class="rounded-lg my-2 block text-sm px-2 py-4 text-black bg-blue-500 font-semibold hover:bg-blue hover:text-gray transition duration-300">Home</a></li>
+                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">About</a></li>
+                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Products</a></li>
+                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Recognition</a></li>
+                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Contact</a></li>
+                                </ul>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
               </div>
           </div>
       </nav>
+        </div>
+		
   </header>
-    <script src="script.js"></script>
+    <script src="/static/js/script.js"></script>
   </body>
 </html>
