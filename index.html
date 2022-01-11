@@ -1,90 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Computer Paradise</title>
-<link rel="shortcut icon" href="static/images/PC.svg" type="image/x-icon">
-
-	<link href="static/css/style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
-	 crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
 </head>
-
-<body class="m-0 font-sans bg-gray-700 text-gray-300 w-full">
-    <div class="flex flex-row justify-center">
-<div class="w-full  m-3 min-h-full max-w-5xl">
-	<header class="flex flex-row w-full justify-center">
-        <div class="w-full max-w-5xl">
-            <nav class="m-3 p-4 py-1 rounded-full bg-gray-900 blur-md shadow-2xl">
-			<div class="mx-auto px-4">
-				<div class="flex justify-between md:justify-center">
-					<div class="flex flex-space space-x-7 w-full">
-						<a href="" class="flex items-center py-2 px-2">
-							<img class="h-12 w-12 mr-2 text-blue-400" src="static/images/PC.svg" alt="Logo">
-                            <h1 class="hidden lg:inline-flex text-2xl font-semibold text-blue">Computer&nbsp;<span class="text-red">Paradise</span></h1>
-                        </a>
-
-                        <div class="hidden md:flex w-full justify-end items-center space-x-1">
-                            <a href="" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Home</a>
-                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
-                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Products</a>
-                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Recognition</a>
-                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
-                        </div>
-                        <div class="w-full flex justify-end items-center md:hidden">
-                            <div class="hamburger">
-                                <button class="outline-none mobile-menu-button">
-                                    <svg
-                                        class="w-8 h-8 text-blue"
-                                        x-show="!showMenu"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                    <path d="M4 6h16M4 12h14M4 18h16"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="absolute top-20 bg-gray-700 p-6 shadow-2xl rounded-lg hidden mobile-menu">
-                                <ul>
-                                    <li class="active"><a href="index.html" class="rounded-lg my-2 block text-sm px-2 py-4 text-black bg-blue-500 font-semibold hover:bg-blue hover:text-gray transition duration-300">Home</a></li>
-                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">About</a></li>
-                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Products</a></li>
-                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Recognition</a></li>
-                                    <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-              </div>
-          </div>
-      </nav>
-    </div>
-		
-  </header>
-    <div class="mt-4 cards">
-    </div>
-
-
-
-
-</div>
-</div>
-<footer class="bg-gray-900 absolute w-full min-h-6xl bottom-0">
-    <div class="px-6"></div>
-    <div class="p-4 m-3 md:p-2 md:m2">
-    <div class="text-center text-gray-500 text-base">
-        <a href="">Home</a> / <a href="">About</a> / <a href="">Products</a> / <a href="">Recognition</a> / <a href="">Contact</a>
-    </div>
-    <div class="p-3 text-center text-gray-500 font-medium">
-        <a href="/">Made by Computer Paradise Partnership Firm &copy; 2016 - 2022</a> 
-    </div></div>
-</footer>
-    <script src="static/js/script.js"></script>
-  </body>
+<body>
+    <div id="root"></div>
+<script src="static/js/react.js" type="text/babel"></script>
+</body>
 </html>
