@@ -12,8 +12,9 @@
 	 crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="m-0 font-sans bg-gray-700 text-gray-300">
-
+<body class="m-0 font-sans bg-gray-700 text-gray-300 w-full">
+    <div class="flex flex-row justify-center">
+<div class="w-full  m-3 min-h-full max-w-5xl">
 	<header class="flex flex-row w-full justify-center">
         <div class="w-full max-w-5xl">
             <nav class="m-3 p-4 py-1 rounded-full bg-gray-900 blur-md shadow-2xl">
@@ -33,7 +34,7 @@
                             <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
                         </div>
                         <div class="w-full flex justify-end items-center md:hidden">
-                            <div class="">
+                            <div class="hamburger">
                                 <button class="outline-none mobile-menu-button">
                                     <svg
                                         class="w-8 h-8 text-blue"
@@ -49,7 +50,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="absolute top-16 bg-gray-700 p-6 shadow-2xl rounded-lg hidden mobile-menu">
+                            <div class="absolute top-20 bg-gray-700 p-6 shadow-2xl rounded-lg hidden mobile-menu">
                                 <ul>
                                     <li class="active"><a href="index.html" class="rounded-lg my-2 block text-sm px-2 py-4 text-black bg-blue-500 font-semibold hover:bg-blue hover:text-gray transition duration-300">Home</a></li>
                                     <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">About</a></li>
@@ -57,18 +58,33 @@
                                     <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Recognition</a></li>
                                     <li><a href="#" class="rounded-lg my-2 block text-sm px-2 py-4 hover:bg-blue transition duration-300">Contact</a></li>
                                 </ul>
-                                
-                                
-                                
                             </div>
                         </div>
                     </div>
               </div>
           </div>
       </nav>
-        </div>
+    </div>
 		
   </header>
+    <div class="mt-4 cards">
+    </div>
+
+
+
+
+</div>
+</div>
+<footer class="bg-gray-900 absolute w-full min-h-6xl bottom-0">
+    <div class="px-6"></div>
+    <div class="p-4 m-3 md:p-2 md:m2">
+    <div class="text-center text-gray-500 text-base">
+        <a href="">Home</a> / <a href="">About</a> / <a href="">Products</a> / <a href="">Recognition</a> / <a href="">Contact</a>
+    </div>
+    <div class="p-3 text-center text-gray-500 font-medium">
+        <a href="/">Made by Computer Paradise Partnership Firm &copy; 2016 - 2022</a> 
+    </div></div>
+</footer>
     <script src="static/js/script.js"></script>
   </body>
 </html>
