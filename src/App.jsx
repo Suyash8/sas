@@ -7,41 +7,47 @@ import Test from "./components/Test"
 
 
 function App() {
-        const [pages, setPages] = useState([
-        {
-            name: 'Home',
-            isActive: true
-        },
-        {
-            name: 'About',
-            isActive: false
-        },
-        {
-            name: 'Products',
-            isActive: false
-        },
-        {
-            name: 'Recognition',
-            isActive: false
-        },
-        {
-            name: 'Contact',
-            isActive: false
-        }
-    ]);
 
-    function setHome(home) {
-        setPages(prevState => {
-            let page = []
-            for (let i = 0; i < prevState.length; i++) {
-                page.push({
-                    ...prevState[i],
-                    isActive: prevState[i].name === home ? true : false
-                })
-            }
-            return page
-        });
-    }
+	let page = localStorage.getItem("pages") ? JSON.parse(localStorage.getItem("pages")) : [
+		{
+			name: 'Home',
+			isActive: true
+		},
+		{
+			name: 'About',
+			isActive: false
+		},
+		{
+			name: 'Products',
+			isActive: false
+		},
+		{
+			name: 'Recognition',
+			isActive: false
+		},
+		{
+			name: 'Contact',
+			isActive: false
+		}
+	]
+	
+
+	const [pages, setPages] = useState(page);
+	function setHome(home) {
+		setPages(prevState => {
+			let page = []
+			for (let i = 0; i < prevState.length; i++) {
+				page.push({
+					...prevState[i],
+					isActive: prevState[i].name === home ? true : false
+				})
+			}
+
+		localStorage.setItem('pages', JSON.stringify(page))
+			return page
+		});
+
+	}
 
    
     return (

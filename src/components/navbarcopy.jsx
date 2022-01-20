@@ -7,9 +7,9 @@ export default function Navbar({pages, setHome}) {
  
   return (
 <header>
-  <div className="">
+  <div className="max-w-5xl">
     <nav>
-			<div className="px-4">
+			<div className="mx-auto px-4">
 				<div className="flex justify-between md:justify-center">
 					<div className="flex flex-space space-x-7 w-full">
 						<a href="/" className="flex items-center py-2 px-2">

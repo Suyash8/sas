@@ -23,8 +23,12 @@ export default function Hamburger({pages, setHome}) {
 					</svg>
 				</Menu.Button>
 				<Transition
-        enter="transition duration-300 ease-out"
-        leave="transition duration-150 ease-out"
+        enter="transition duration-200 ease-out"
+				enterFrom="scale-90 opacity-0"
+				enterTo="scale-100 opacity-100"
+        leave="transition duration-100 ease-out"
+				leaveFrom="scale-100 opacity-100"
+				leaveTo="scale-90 opacity-0"
       >
 				<Menu.Items>
 				<div className={`absolute top-20 right-5 bg-gray-700 p-6 shadow-2xl rounded-lg mobile-menu`}>

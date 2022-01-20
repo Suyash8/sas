@@ -26,7 +26,7 @@ export default function Main({pages, setHome}) {
         content = <Contact pages={page} />
     } 
     return (
-        <main className="mb-full">
+        <main className="pb-6">
             {content}
         </main>
     )
